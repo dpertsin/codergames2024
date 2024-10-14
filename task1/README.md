@@ -1,6 +1,6 @@
 # Task 1 Description:
 
-![Task Screenshot of the Description](./TaskDescription.png)
+![Task Screenshot of the Description](./images/TaskDescription.png)
 
 # My approach of how to Find a Perfect Number
 
@@ -26,16 +26,16 @@ ok, now let's jump right to the point.
 
 ### Euclid’s Perfect Number Theorem
 
-Euclid–Euler Theorem, also known as Euclid’s Perfect Number Theorem, connects Perfect Numbers to Mersenne Primes. It states that an even number is perfect if and only if it can be expressed in the form ![Perfect Number Formula](./formula.svg) where 2p-1 is a prime number.
+Euclid–Euler Theorem, also known as Euclid’s Perfect Number Theorem, connects Perfect Numbers to Mersenne Primes. It states that an even number is perfect if and only if it can be expressed in the form ![Perfect Number Formula](./images/formula.svg) where 2p-1 is a prime number.
 
 Jacques Lefèvre, in 1496, suggested that the Euclid-Euler theorem encompasses all Perfect Numbers, implying the **non-existence of odd Perfect Numbers**.
 
 According to **Euclid’s Perfect Number theorem:**
 
-> ![Perfect Number Formula](./formula.svg) is an even perfect number where \(2^p - 1\) is a prime.
+> ![Perfect Number Formula](./images/formula.svg) is an even perfect number where \(2^p - 1\) is a prime.
 
 Similarly, we can generate the first four Perfect Number using the above formula (p is prime number):
 
-![Perfect Number Algorithm](./example.svg)
+![Perfect Number Algorithm](./images/example.svg)
 
 Now let's code...
