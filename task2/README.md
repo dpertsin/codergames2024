@@ -43,11 +43,11 @@ For a given `N`:
 
 The resulting values for each of the input N on a new line:
 
-For N = 1000: 2001998
+For N = 1000: 4000000
 
-For N = 1000000: 1999973
+For N = 1000000: 987654271
 
-For N = 10000000000000: 30998
+For N = 10000000000000: 62500
 
 The country, which the hint refers to:
 
