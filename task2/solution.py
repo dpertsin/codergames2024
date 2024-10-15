@@ -1,21 +1,31 @@
 MOD = 987654321
 
-# Function to compute the diamond sum for a given odd N
 def diamond_sum(N):
     if N == 1:
-        return 1
-    half = N // 2
-    diamond_indices = [
-        N * half + 1,           # Middle of the top side
-        N * (half + 1),         # Middle of the bottom side
-        N * half - 1,           # Left side of the top
-        N * half + N - 2        # Right side
+        return 1 % MOD
+    
+    mid = (N * N + 1) // 2
+    step = (N - 1) // 2
+    
+    # Calculate diamond points around the center
+    diamond_positions = [
+        mid - step,
+        mid + step,
+        mid - step * N,
+        mid + step * N,
+        mid - step * (N + 1),
+        mid + step * (N + 1),
+        mid - step * (N - 1),
+        mid + step * (N - 1)
     ]
-    return sum(diamond_indices) % MOD
+    
+    # Sum these positions and return result modulo MOD
+    diamond_sum_value = sum(diamond_positions) % MOD
+    return diamond_sum_value
 
-# Test with the provided inputs
-test_cases = [1000, 1000000, 10000000000000]
+# Input values from the file
+input_values = [5, 1000, 1000000, 10000000000000]
 
-# Compute results for each test case
-results = [diamond_sum(N) for N in test_cases]
-print(results)
+# Output the diamond sum for each input
+for N in input_values:
+    print(diamond_sum(N))
